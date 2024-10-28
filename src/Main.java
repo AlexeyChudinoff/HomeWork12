@@ -11,7 +11,7 @@ public class Main {
       System.out.println(tolstoy.getFirstName() + " " + tolstoy.getLastName());
 
     Book stihi = new Book("Stihi", pushkin, 1830);
-    Book Rasskazi = new Book("Rasskazi i shutki", tolstoy, 1900);
+    Book Rasskazi = new Book("Rasskazi i Shutki", tolstoy, 1900);
 
     System.out.println(stihi.getYearBook() + ", " +  pushkin.getFirstName() + " "
         + pushkin.getLastName() + ", " + stihi.getNameBook());
@@ -20,6 +20,10 @@ public class Main {
 
     stihi.setYearBook(1825);
     System.out.println("stihi = " + stihi.getYearBook());
+
+    System.out.println(Rasskazi);
+    System.out.println(tolstoy);
+
 
 
   }
