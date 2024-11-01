@@ -46,11 +46,11 @@ public class Book {
     }
     Book book = (Book) o;
     return Objects.equals(nameBook, book.nameBook) && Objects.equals(authorBook,
-        book.authorBook);
+        book.authorBook) && Objects.equals(yearBook, book.yearBook);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(nameBook, authorBook);
+    return Objects.hash(nameBook, authorBook, yearBook);
   }
 }
